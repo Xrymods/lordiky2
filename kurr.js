@@ -2525,7 +2525,7 @@ quotes = quotesnya.result.quotes
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
        menu = `╭─❒ 「 RDP/VPS 」
-```READY VPS/RDP ```
+READY VPS/RDP
 
 *♂️ RAM 1 CPU 1  : PRICE 15K*
 *♂️ RAM 2 CPU 1 : PRICE 20K*
