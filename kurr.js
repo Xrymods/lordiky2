@@ -1356,7 +1356,7 @@ quotes = quotesnya.result.quotes
  _Battery : ${baterai.battery}_
  _Mode : ${publik ? 'Public' : 'Self'}_
  _Total Hit : ${cmhit.length}_
- _Total menu : 390_
+ _Total menu : 385_
  _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
  _Nama Bot : Kurz Bot Assistan_
  _Nama Owner : ${NamaOwner}_
@@ -1387,13 +1387,7 @@ quotes = quotesnya.result.quotes
 
 ╭─❒ COMMAND
 │
-─❒ LOGO MAKER
-${nomor++}.  ${prefix}carbon Text|warna
-${nomor++}.  ${prefix}kaneki
-${nomor++}.  ${prefix}rem 
-${nomor++}.  ${prefix}lolimaker
-${nomor++}.  ${prefix}sadboy
-${nomor++}.  ${prefix}girlneko
+-LIST ALL
 ─❒ FUN MENU NEW
 ${nomor++}.  ${prefix}bego
 ${nomor++}.  ${prefix}tolol
@@ -1915,7 +1909,7 @@ quotes = quotesnya.result.quotes
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
        menu = `╭─❒ 「 KurzBotz Assistan Info 」
-*TOTAL MENU :390*
+*TOTAL MENU :385*
 *OWNER: ${NamaOwner}*
 *NOMER OWNER: ${NomorOwner}*
 *Lib: Baileys*
@@ -2018,7 +2012,7 @@ quotes = quotesnya.result.quotes
  _Battery : ${baterai.battery}_
  _Mode : ${publik ? 'Public' : 'Self'}_
  _Total Hit : ${cmhit.length}_
- _Total menu : 390_
+ _Total menu : 385_
  _Prefix : ${multi ? 'Multi Prefix' : 'No Prefix'}_
  _Nama Bot : Kurz Bot Assistan_
  _Nama Owner : ${NamaOwner}_
@@ -2049,13 +2043,7 @@ quotes = quotesnya.result.quotes
 
 ╭─❒ COMMAND
 │
-─❒ LOGO MAKER
-${nomor++}.  ${prefix}carbon Text|warna
-${nomor++}.  ${prefix}kaneki
-${nomor++}.  ${prefix}rem 
-${nomor++}.  ${prefix}lolimaker
-${nomor++}.  ${prefix}sadboy
-${nomor++}.  ${prefix}girlneko
+-LIST ALL
 ─❒ FUN MENU NEW
 ${nomor++}.  ${prefix}bego
 ${nomor++}.  ${prefix}tolol
