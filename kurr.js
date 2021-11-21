@@ -2514,8 +2514,84 @@ kurr.sendMessage(from, btnBngsat, MessageType.buttonsMessage, { quoted: ftrol, c
                   }
 break
         case 'store':
-        reply('*Kosong Bang*')
-        break
+  if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
+        if(menusimpel == false){               
+                const timestampi = speed();
+					const latensyi = speed() - timestampi
+                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
+quotes = quotesnya.result.quotes
+                nomor = 1
+                stod = `${sender}`
+       stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
+				stst = stst.status == 401 ? '' : stst.status
+       menu = `╭─❒ 「 RDP/VPS 」
+```READY VPS/RDP ```
+
+*♂️ RAM 1 CPU 1  : PRICE 15K*
+*♂️ RAM 2 CPU 1 : PRICE 20K*
+*♂️ RAM 3 CPU 1 : PRICE 30K*
+*♂️ RAM 4 CPU 2 : PRICE 40K*
+
+```⚡ SERVER ONLY US, AS, EU```
+```💻 WINDOWS 2019, 10, 2016, 2012```
+```🔋EXP 30 HARI```
+```🍁GARANSI 2 MINGGU SETELAH PEMBELIAN```
+
+*INFORMATION:*
+- SUPPORT ALL BOT ( WAJIB RAM 4 )
+- AWET DAN TAHAN LAMA ( SELAMA TIDAK MELANGGAR TOS/RULES )
+
+*RULES:*
+- DILARANG DIGUNAKAN UNTUK MINING ( RAWAN BANNED )
+- DILARANG MENGGUNAKAN VPN UNTUK LOGIN RDP
+- GUNAKAN SEWAJAR NYA AJA ( BIAR AWET )
+- JANGAN SAMPAI OVERLOAD ( 99% CPU )
+
+```💵 PAYMENT```
+- GOPAY
+- OVO
+- DANA
+- QRIS ALL PAYMENT
+
+📥 BERMINAT ? HUBUNGI :
+https://wa.me/6281220670449 ( KurrXd )
+
+
+*MATURSUWUN MONGGO DI LARISI*`
+sendButLocation(from, `${menu}`, "*_© Kurz Bot Assistan_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`menu`,buttonText:{displayText:'BACK TO MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
+}
+else if(menusimpel = true){
+        stod = `${sender}`
+fill =`Hai Kak ${pushname}, ${tampilUcapan}
+Silahkan Pilih Untuk Menampilkan Menu
+
+Jika Button Tidak Muncul Ketik .allmenu`
+menu =` Kurz Bot Assistan`
+gbutsan = [
+{buttonId:`allmenu`,buttonText:{displayText:'SHOW MENU'},type:1},
+{buttonId:`store`,buttonText:{displayText:'STORE MENU'},type:1},
+{buttonId:`script`,buttonText:{displayText:'SEWABOT'},type:1}
+]
+mhan = await kurr.prepareMessage(from, ofrply, image, {thumbnail: ofrply})
+const btnmenu = {
+imageMessage: mhan.message.imageMessage,
+contentText: `${fill}`,
+footerText: `${menu}`,
+buttons: gbutsan,
+headerType: 4
+}
+kurr.sendMessage(from, btnmenu, MessageType.buttonsMessage, {contextInfo :{text: 'hi',
+"forwardingScore": 1000000000,
+isForwarded: false,
+sendEphemeral: false,
+"externalAdReply": {
+"title": `hallo ${pushname}` ,
+"body": `${jmn} - ${week} ${weton} - ${calender}`,
+"mediaType": "2",
+"thumbnail": pporigi,
+},mentionedJid:[stod]}, quoted : ftrol})
+}
+break
 case 'verify':
 if (isRegistered) return sticOk(from)
 const serialUser = createSerial(18)
