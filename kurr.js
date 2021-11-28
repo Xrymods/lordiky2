@@ -3512,7 +3512,7 @@ break
 		anu =`PRICELIST SEWABOT
 		10K:6BULAN
 		20K:MANEN
-		SC? Lawak Aowkowiwook`
+		SC? https://github.com/KurrXd/kurz`
  buttons = [
 {buttonId: `menu`, buttonText: {displayText: 'BACK➡️'}, type: 1},
 {buttonId:`donasi`,buttonText:{displayText:'DONASI'},type:1},
