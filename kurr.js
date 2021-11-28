@@ -1345,8 +1345,7 @@ reply('http://youtube.com/c/KurrXd')
         	case 'allmenu':
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
         if(menusimpel == false){               
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+                
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -1773,7 +1772,6 @@ ${nomor++}.  *=>*
 ${nomor++}.  *$*
 │
 ─❒ OTHER / FUN
-${nomor++}.  ${prefix}quotes
 ${nomor++}.  ${prefix}meme
 ${nomor++}.  ${prefix}darkjoke
 ${nomor++}.  ${prefix}rate
@@ -1797,7 +1795,7 @@ ${nomor++}.  ${prefix}getcaption [ _reply message_ ]
 ${nomor++}.  ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
 ${nomor++}.  ${prefix}sharelock [ _teks1|teks2_ ]
 
-𝘘𝘜𝘖𝘛𝘌𝘚  : ${quotes}
+
 └─────────────────❒`
 sendButLocation(from, `${menu}`, "*_© Kurz Bot Assistan_*", {jpegThumbnail:ofrply1,name:""}, [{buttonId:`store`,buttonText:{displayText:'𝙨𝙩𝙤𝙧𝙚 𝙢𝙚𝙣𝙪'},type:1},{buttonId:`sc`,buttonText:{displayText:'ＳＥＷＡ　ＢＯＴ'},type:1},{buttonId:`catalog`,buttonText:{displayText:'CATALOG MENU'},type:1}], {contextInfo: { mentionedJid: [dtod,otod,stod]}})
 }
@@ -1902,8 +1900,7 @@ case 'menu':
         if(menusimpel == false){               
                 const timestampi = speed();
 					const latensyi = speed() - timestampi
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+                
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
@@ -1999,8 +1996,7 @@ case 'bego':
         break
 case 'catalog': 
   if (!isRegistered) return sendButRegis(from, daftar1, daftar2, daftar3, { quoted: ftrol})
-quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+
                 nama = ' Kurz Bot Assistan '
        ownerJid = "6281220670449@s.whatsapp.net"
                 nomor = 1
@@ -2429,7 +2425,6 @@ ${nomor++}.  *=>*
 ${nomor++}.  *$*
 │
 ─❒ OTHER / FUN
-${nomor++}.  ${prefix}quotes
 ${nomor++}.  ${prefix}meme
 ${nomor++}.  ${prefix}darkjoke
 ${nomor++}.  ${prefix}rate
@@ -2453,7 +2448,7 @@ ${nomor++}.  ${prefix}getcaption [ _reply message_ ]
 ${nomor++}.  ${prefix}tospam [ _reply audio/sticker/image|jumlah_ ]
 ${nomor++}.  ${prefix}sharelock [ _teks1|teks2_ ]
 
-𝘘𝘜𝘖𝘛𝘌𝘚  : ${quotes}
+
 └─────────────────❒`
 if(menuall == false){
    //Masih langka
@@ -2506,24 +2501,30 @@ break
         if(menusimpel == false){               
                 const timestampi = speed();
 					const latensyi = speed() - timestampi
-                quotesnya = await fetchJson(`https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx`)
-quotes = quotesnya.result.quotes
+                
                 nomor = 1
                 stod = `${sender}`
        stst = await kurr.getStatus(`${sender.split('@')[0]}@c.us`)
 				stst = stst.status == 401 ? '' : stst.status
-       menu = `╭─❒ 「 RDP/VPS 」
-READY VPS/RDP
+       menu = `*#WTS*
+
+```READY RDP WINDOWS SERVER 2012/2016/2019/2022```
 
 *♂️ RAM 1 CPU 1  : PRICE 15K*
 *♂️ RAM 2 CPU 1 : PRICE 20K*
-*♂️ RAM 3 CPU 1 : PRICE 30K*
 *♂️ RAM 4 CPU 2 : PRICE 40K*
+*♂️ RAM 8 CPU 4 : PRICE 80k*
+*♂️ RAM 16 CPU 6 : PRICE 150k*
+```READY VPS UBUNTU```
 
-*⚡ SERVER ONLY US, AS, EU*
-*💻 WINDOWS 2019, 10, 2016, 2012*
-*🔋EXP 30 HARI*
-*🍁GARANSI 2 MINGGU SETELAH PEMBELIAN*
+*♂️ 1 TAHUN ACTIVE : 60K*
+
+
+
+```⚡ SERVER ONLY SG```
+```💻 WINDOWS 2019, 10, 2016, 2012```
+```🔋EXP 30 HARI```
+```🍁GARANSI 2 MINGGU SETELAH PEMBELIAN```
 
 *INFORMATION:*
 - SUPPORT ALL BOT ( WAJIB RAM 4 )
@@ -2535,14 +2536,14 @@ READY VPS/RDP
 - GUNAKAN SEWAJAR NYA AJA ( BIAR AWET )
 - JANGAN SAMPAI OVERLOAD ( 99% CPU )
 
-*💵 PAYMENT*
+```💵 PAYMENT```
 - GOPAY
 - OVO
 - DANA
 - QRIS ALL PAYMENT
 
 📥 BERMINAT ? HUBUNGI :
-https://wa.me/6281220670449 ( KurrXd )
+https://bit.ly/BeliRdpBang ( KurrXd )
 
 
 *MATURSUWUN MONGGO DI LARISI*`
@@ -2655,13 +2656,7 @@ break
 					buffer1 = await getBuffer(anu.result.results)
 					kurr.sendMessage(from, buffer1, image, {quoted: mek, thumbnail: fs.readFileSync('./logonya.jpeg')})
 					break				
-      case 'quotes':
-     ini_result = await fetchJson('https://xnxxapi.herokuapp.com/api/randomquote?apikey=xnxx')
-     get_result = ini_result.result
-        ini_txt = `${get_result.quotes}\n\n`
-       ini_txt += `~ ${get_result.author}`
-     reply(ini_txt)
-     break					
+		
 					//menu haram
 					case 'ass': 
 					case 'ahegao': 
