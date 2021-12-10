@@ -1,7 +1,7 @@
 {
-  "name": "KurrXd",
+  "name": "RISKY-BOT",
   "version": "0.0.1",
-  "description": "KurrXd",
+  "description": "RISKY-BOT",
   "main": "node index",
   "directories": {
     "lib": "lib"
@@ -17,7 +17,7 @@
     "whatsapp",
     "bot"
   ],
-  "author": "KurrXd",
+  "author": "XRYBOT",
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/baileys": "^3.5.3",
